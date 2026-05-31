@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { SiGithub } from "@icons-pack/react-simple-icons";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -42,9 +43,15 @@ export default function Hero() {
           View Projects
         </Button>
 
-        <Button variant="outline" size="lg" className="gap-2">
-          <SiGithub />
-          GitHub
+        <Button variant="outline" size="lg" className="gap-2" asChild>
+          <Link
+            href="https://github.com/Narayan2206"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiGithub />
+            GitHub
+          </Link>
         </Button>
       </div>
     </section>
