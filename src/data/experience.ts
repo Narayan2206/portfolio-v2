@@ -10,8 +10,8 @@ export const experiences = [
       "React",
       "React Native",
       "TypeScript",
-      "Redux",
       "JavaScript",
+      "Redux",
     ],
   },
 ];
