@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center py-8">
+    <section id="hero" className="min-h-screen flex flex-col items-center justify-center text-center py-8">
       <Image
         src="https://avatars.githubusercontent.com/u/116633349?v=4"
         alt="Narayan Pal"
