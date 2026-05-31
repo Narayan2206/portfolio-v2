@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Slate - Workspace & Documents",
     description:
-      "A Notion-inspired workspace platform that enables document creation, rich text editing, workspace organization and authentication using Supabase and TipTap.",
+      "A full-stack workspace application for creating, organizing and managing documents with rich-text editing, authentication and real-time data synchronization.",
     tech: [
       "TypeScript",
       "JavaScript",
