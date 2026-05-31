@@ -34,17 +34,21 @@ export default function Experience() {
             "
           >
             <CardHeader>
-              <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
-                <div>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between gap-4">
                   <CardTitle className="text-xl">{experience.role}</CardTitle>
 
-                  <CardDescription className="mt-1">
-                    {experience.company}
-                  </CardDescription>
+                  <p className="text-sm text-muted-foreground whitespace-nowrap">
+                    {experience.duration}
+                  </p>
                 </div>
 
-                <div className="text-sm text-muted-foreground">
-                  {experience.duration}
+                <div className="flex items-center justify-between gap-4">
+                  <CardDescription>{experience.company}</CardDescription>
+
+                  <p className="text-sm text-muted-foreground whitespace-nowrap">
+                    {experience.location}
+                  </p>
                 </div>
               </div>
             </CardHeader>
