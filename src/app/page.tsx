@@ -1,6 +1,7 @@
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Experience />
       <Projects />
+      <Skills />
     </main>
   );
 }
