@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Slate - Workspace & Documents",
     description:
-      "A full-stack workspace application for creating, organizing and managing documents with rich-text editing, authentication and real-time data synchronization.",
+      "A SaaS-style workspace application for creating and organizing rich-text documents. Built with secure authentication, workspace-based access control, autosaving document editing, and a scalable service architecture designed for maintainability.",
     tech: [
       "TypeScript",
       "JavaScript",

@@ -58,7 +58,7 @@ export default function Projects() {
                 )}
               </div>
               <p className="text-sm text-muted-foreground">
-                Personal Project • Full Stack
+                Personal Project • Full Stack Application
               </p>
             </CardHeader>
 
