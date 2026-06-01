@@ -39,7 +39,7 @@ export default function Hero() {
       </div>
 
       <div className="mt-10 flex flex-wrap justify-center gap-4">
-        <Button size="lg" className="bg-blue-500 hover:bg-blue-600" asChild>
+        <Button size="lg" className="bg-blue-500 text-white hover:bg-blue-600" asChild>
           <a href="#projects">View Projects</a>
         </Button>
 

@@ -31,7 +31,7 @@ export default function Contact() {
             </Link>
           </Button>
 
-          <Button size="lg" asChild className="bg-blue-500 hover:bg-blue-600">
+          <Button size="lg" asChild className="bg-blue-500 hover:bg-blue-600 text-white">
             <Link href="mailto:narayan220602@gmail.com">Email</Link>
           </Button>
         </div>

@@ -87,7 +87,7 @@ export default function Projects() {
               <Button
                 size="sm"
                 asChild
-                className="bg-blue-500 hover:bg-blue-600"
+                className="bg-blue-500 hover:bg-blue-600 text-white"
               >
                 <Link href={project.demo} target="_blank">
                   <ExternalLink />
