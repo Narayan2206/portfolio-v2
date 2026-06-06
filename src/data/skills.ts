@@ -1,26 +1,20 @@
-export const skills = {
-  " ": [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "React Native",
-    "TailwindCSS",
-    "Git",
-    "Supabase",
-    "Postman",
-  ],
-
-  //   backend: [
-  //     "Node.js",
-  //     "Express",
-  //     "Supabase",
-  //     "PostgreSQL",
-  //   ],
-
-//   mobile: ["React Native"],
-
-//   tools: ["Git", "GitHub"],
-};
+export const skills = [
+  {
+    title: "Languages",
+    items: ["HTML5", "CSS3", "JavaScript", "TypeScript"],
+  },
+  {
+    title: "Frameworks & Libraries",
+    items: [
+      "React",
+      "Next.js",
+      "React Native",
+      "TailwindCSS",
+      "Zustand",
+    ],
+  },
+  {
+    title: "Tools",
+    items: ["Git", "Postman", "Supabase"],
+  },
+];

@@ -1,5 +1,5 @@
 import { skills } from "@/data/skills";
-import { Badge } from "./ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Skills() {
   return (
@@ -11,22 +11,42 @@ export default function Skills() {
           A snapshot of the technologies in my development toolkit.
         </p>
       </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {skills.map((group) => (
+          <Card
+            key={group.title}
+            className="
+              bg-card/50
+              border-border/50
+              hover:border-blue-500/30
+              transition-colors
+            "
+          >
+            <CardHeader className="pb-3">
+              <CardTitle className="text-lg">{group.title}</CardTitle>
+            </CardHeader>
 
-      <div className="space-y-8">
-        {Object.entries(skills).map(([category, techs]) => (
-          <div key={category}>
-            <h3 className="mb-4 text-lg font-semibold capitalize">
-              {category}
-            </h3>
-
-            <div className="flex flex-wrap gap-2">
-              {techs.map((tech) => (
-                <Badge key={tech} variant="secondary">
-                  {tech}
-                </Badge>
-              ))}
-            </div>
-          </div>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <span
+                    key={item}
+                    className="
+                      text-sm
+                      text-muted-foreground
+                      bg-muted/40
+                      px-2.5
+                      py-1
+                      rounded-md
+                      border border-border/40
+                    "
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         ))}
       </div>
     </section>
