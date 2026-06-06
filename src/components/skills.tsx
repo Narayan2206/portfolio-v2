@@ -8,7 +8,7 @@ export default function Skills() {
         <h2 className="text-3xl font-bold tracking-tight">Skills</h2>
 
         <p className="mt-2 text-muted-foreground">
-          A snapshot of the technologies in my development toolkit.
+          Technologies and tools I’ve used across projects.
         </p>
       </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
