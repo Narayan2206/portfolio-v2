@@ -14,6 +14,9 @@ export default function Home() {
       <Projects />
       <Skills />
       <Contact />
+      <footer className="py-8 text-center text-sm text-muted-foreground">
+        &copy; {new Date().getFullYear()} Narayan Pal
+      </footer>
     </main>
   );
 }
