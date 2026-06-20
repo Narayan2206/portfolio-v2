@@ -8,15 +8,17 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-5xl px-6 md:px-8">
-      <Hero />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Contact />
+    <>
+      <main className="mx-auto w-full max-w-5xl px-6 md:px-8">
+        <Hero />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
       <footer className="py-8 text-center text-sm text-muted-foreground">
         &copy; {new Date().getFullYear()} Narayan Pal
       </footer>
-    </main>
+    </>
   );
 }
