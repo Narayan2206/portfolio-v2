@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { Mail } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -18,6 +21,7 @@ export default function Contact() {
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Button variant="outline" size="lg" asChild>
             <Link href="https://github.com/Narayan2206" target="_blank">
+            <SiGithub />
               GitHub
             </Link>
           </Button>
@@ -27,12 +31,13 @@ export default function Contact() {
               href="https://www.linkedin.com/in/narayanpal2206/"
               target="_blank"
             >
+              <FaLinkedin />
               LinkedIn
             </Link>
           </Button>
 
           <Button size="lg" asChild className="bg-blue-500 hover:bg-blue-600 text-white">
-            <Link href="mailto:narayan220602@gmail.com">Email</Link>
+            <Link href="mailto:narayan220602@gmail.com"><Mail /> Email</Link>
           </Button>
         </div>
       </div>
