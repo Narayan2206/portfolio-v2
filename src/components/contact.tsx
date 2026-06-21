@@ -1,9 +1,11 @@
+"use client";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Mail } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
+import { toast } from "sonner";
 
 export default function Contact() {
   return (
@@ -21,7 +23,7 @@ export default function Contact() {
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Button variant="outline" size="lg" asChild>
             <Link href="https://github.com/Narayan2206" target="_blank">
-            <SiGithub />
+              <SiGithub />
               GitHub
             </Link>
           </Button>
@@ -36,8 +38,15 @@ export default function Contact() {
             </Link>
           </Button>
 
-          <Button size="lg" asChild className="bg-blue-500 hover:bg-blue-600 text-white">
-            <Link href="mailto:narayan220602@gmail.com"><Mail /> Email</Link>
+          <Button
+            size="lg"
+            className="bg-blue-500 hover:bg-blue-600 text-white"
+            onClick={() => {
+              navigator.clipboard.writeText("narayan220602@gmail.com");
+              toast.info("Email copied to clipboard.");
+            }}
+          >
+            <Mail /> narayan220602@gmail.com
           </Button>
         </div>
       </div>
