@@ -8,6 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { toast } from "sonner";
 
 export default function Contact() {
+  const EMAIL = "narayan220602@gmail.com";
   return (
     <section id="contact" className="py-24 text-center">
       <div className="mx-auto max-w-2xl">
@@ -22,7 +23,11 @@ export default function Contact() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Button variant="outline" size="lg" asChild>
-            <Link href="https://github.com/Narayan2206" target="_blank">
+            <Link
+              href="https://github.com/Narayan2206"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <SiGithub />
               GitHub
             </Link>
@@ -32,6 +37,7 @@ export default function Contact() {
             <Link
               href="https://www.linkedin.com/in/narayanpal2206/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin />
               LinkedIn
@@ -42,13 +48,16 @@ export default function Contact() {
             size="lg"
             className="bg-blue-500 hover:bg-blue-600 text-white"
             onClick={() => {
-              navigator.clipboard.writeText("narayan220602@gmail.com");
+              navigator.clipboard.writeText(EMAIL);
               toast.info("Email copied to clipboard.");
             }}
           >
-            <Mail /> narayan220602@gmail.com
+            <Mail /> Copy Email
           </Button>
         </div>
+        <p className="mt-6 text-sm text-muted-foreground">
+          {EMAIL}
+        </p>
       </div>
     </section>
   );
