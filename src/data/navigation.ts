@@ -1,5 +1,5 @@
 export const navigation = [
-  { id: "hero", label: "Hero" },
+  { id: "hero", label: "Home" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
